@@ -172,10 +172,10 @@ console.log("El precio total es :" + precioTotal)               // imprimo el re
 // --------------funciones anonimas------------------------
 
 
-
+/* 
 const suma  = function (a, b) { return a + b }; // creo la funcion con los parametros sin valores y con lo que tiene que retornar
 const resta = function (a, b) { return a - b };
 
 
 console.log(suma(15,20)); // imprimo por sonsola la constante y le paso los parametros que necesita
-console.log(resta(15,5));
+console.log(resta(15,5)); */
