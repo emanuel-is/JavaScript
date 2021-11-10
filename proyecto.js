@@ -56,11 +56,13 @@ function cantidadDecuotas (  ) { // creo funcion para calcular precio por cuotas
         alert("3 cuotas de: "+ (precio2 / cuotas))
     }
     else if (cuotas ==6 ) {
-        cuotaTotal= (precio2 * 0.15) /6 ;
+        recargo= (precio2 * 0.15);
+        cuotaTotal = (precio2 + recargo) / 6;
         alert ( "6 cuotas de : "+cuotaTotal)
     }
      else if (cuotas ==12) {
-        cuotaTotal = (precio2 * 0.35) /12;
+        recargo = (precio2 * 0.35);
+        cuotaTotal = (precio2+ recargo)/12
         alert ("12 cuotas de : " +cuotaTotal)
     }
     
