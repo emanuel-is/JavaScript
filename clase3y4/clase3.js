@@ -6,7 +6,7 @@ ingreso incorrecto: envio mensaje y finalizo el bucle */
 
 // ---------------------Bucle For------------------
 
-/* 
+
 let usuario1 = "ema";
 let passUser1 = 1234
 let error = 0;
@@ -18,7 +18,8 @@ for (let i = 0 ;  i < 4   ; i= i + 1 )  { //inicializo el bucle
 
     if (usuario == usuario1 && passUser1 == pass){  //le pongo la condicio para que entre si se cumple 
         
-        console.log ("hola guacho")
+        console.log ("hola guacho");
+        break;
     }
     else {
         console.log("error :"+ i);  // muestro en consola el contador de intentos
@@ -29,7 +30,6 @@ for (let i = 0 ;  i < 4   ; i= i + 1 )  { //inicializo el bucle
         }
     }
 }
- */
 
 
 
@@ -130,7 +130,7 @@ validaredad(edad);
 //calcular precio final. 
 
 
-
+/* 
 function iva (precioProducto) { //calculo el  precio del iva
     let precionConiva = precioProducto * 0.21;
     return precionConiva;       //retorno el precio del iva
@@ -166,7 +166,7 @@ let dia = prompt("ingrese el dia de la compra");                   //pido dia
 let precioTotal = ((precioProducto  + iva (precioProducto))- descuentos (precioProducto , dia));     //realizo la operacion, al precio le sumo el iva y les descuento el descuento para ese precio
 console.log("El precio total es :" + precioTotal)               // imprimo el resultado del total. 
 
-
+ */
 
 
 // --------------funciones anonimas------------------------
@@ -179,3 +179,7 @@ const resta = function (a, b) { return a - b };
 
 console.log(suma(15,20)); // imprimo por sonsola la constante y le paso los parametros que necesita
 console.log(resta(15,5)); */
+
+
+
+

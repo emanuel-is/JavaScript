@@ -1,5 +1,5 @@
 // agregar producto y cantidad al carrito. 
-// agregar otro producto y cantidad al carrito. 
+// agregar otro producto y cantidad al carrito. No
 // --pedir localidad y calcular envio. 
 // -- calcular precio por cuotas y el interes que tenga.  
 
