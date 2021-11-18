@@ -33,7 +33,7 @@ for (let i = o; i < 5 ; i++ ){
 
 
                              /* -------------foreach----------*/
- 
+/*  
 const numeros = [1 , 2 , 10 , 22 , 30 , 44 , 58];     // declaro el objeto.
 var suma = 0;                                             // inicio contador en cero
 let contadorLetras = {};
@@ -59,4 +59,24 @@ letras.forEach (item => {  //recorro los items
     console.log(contadorLetras);  //si imprimo dentro del bucle me muestra cada una de las vueltas que da.
 })
 console.log(contadorLetras);   // si imprimo por fuera me muestra solo el final.
+ */
 
+
+
+ 
+//-------------------- metodo .sort()-----------------------------
+
+let number = [10,110,119,18,12,11,21,25,29,2220,50];
+
+//ordeno los numero con sort. pero para que 
+//los acomode de mayor a menor tomando el valor del digito hay que crearle le funcion (comparacion)
+number.sort(comparation);//
+console.log(number);
+
+
+function comparation (a,b){//creo la funcion y comparo los valors a y b.
+//a-b. el indice de la izquierda va a ser el menos
+//a+b. no va a haber cambios.
+//b-a el indice va a empezar de mayor a menor. 
+    return (b-a);
+}

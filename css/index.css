@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(189, 189, 189);
+    margin: 5%;
+    padding-top: 2%;
+}
+header{
+    z-index: 100;
+}
+
+.tituloAccesorio{
+    padding: 15%;
+    margin-top: 5%;
+    background-color: rgb(74, 116, 74);
+
+}
