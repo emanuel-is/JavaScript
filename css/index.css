@@ -1,10 +1,18 @@
 body{
     background-color: rgb(189, 189, 189);
-    margin: 5%;
-    padding-top: 2%;
+    margin: 5px;
+    padding-top: 2px;
 }
 header{
     z-index: 100;
+}
+.description{ 
+    height: 25px;
+    overflow: hidden;
+    transition: heigth .3s ease-in .3s;
+}
+.description:hover{
+    height: 80px;
 }
 
 .tituloAccesorio{

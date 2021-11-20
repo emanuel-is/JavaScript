@@ -57,7 +57,7 @@
           </nav>
     </header>
     <main>
-        <div class="tituloAccesorio">
+        <div class="tituloAccesorio container-fluid">
             <h2>Venta de Accesorios </h2>
         </div>
             <!--        offcanva del carrito     -->
@@ -99,68 +99,95 @@
               </table>
             </div>
         </div>
+
+        <!-- contenido principal -->
         <section class="container" >
-            <div class="container">
-                <div class="row">
-                  <div class="col">
-                    1 of 2
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+          
+          <div class="container">
+            <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+              <!-- 1 of 5 -->
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="col">
+                  <div class="card shadow mb-1 bg-dark rounded " style="width: 20rem;">
+                    <h5 class="card-title mb-1 pt-2 text-center text-primary">Anillo Solitario Corona</h5>
+                    <img src="./imagenes/Anillo Solitario Corona.png" class="card-img-top" alt="...">
+                    <div class="card-body  ">
+                      <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class=" text-primary">Precio : <span class="precio">$ 10.000</span> </h5>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-light btn-lg button" id="10" onclick= "carritoAgregar(anillo1.nombre), sumaProductos (anillo1.precio)">Agregar al Carrito</button>
                       </div>
-                  </div>
-                  <div class="col">
-                    2 of 2
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col">
-                    1 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    2 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
-                  </div>
-                  <div class="col">
-                    3 of 3
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
+              <!-- 2 of 5 -->
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="col">
+                  <div class="card shadow mb-1 bg-dark rounded " style="width: 20rem;">
+                    <h5 class="card-title mb-1 pt-2 text-center text-primary">Hojas Brillantes</h5>
+                    <img src="./imagenes/Hojas Brillantes.png" class="card-img-top" alt="...">
+                    <div class="card-body  ">
+                      <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class=" text-primary">Precio : <span class="precio"> $ 5.500</span> </h5>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-light btn-lg button" id= "11" onclick= "carritoAgregar(anillo2.nombre) , sumaProductos (anillo2.precio)">Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 of 5 -->
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="col">
+                  <div class="card shadow mb-1 bg-dark rounded " style="width: 20rem;">
+                    <h5 class="card-title mb-1 pt-2 text-center text-primary">Banda Triple Cruzado Con Pavé</h5>
+                    <img src="./imagenes/Banda Triple Cruzado Con Pavé.png" class="card-img-top" alt="...">
+                    <div class="card-body  ">
+                      <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class=" text-primary">Precio : <span class="precio">$ 9.800</span> </h5>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-light btn-lg button" id="12" onclick= "carritoAgregar(anillo3.nombre) , sumaProductos (anillo3.precio)" >Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 4 of 5-->
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="col">
+                  <div class="card shadow mb-1 bg-dark rounded " style="width: 20rem;">
+                    <h5 class="card-title mb-1 pt-2 text-center text-primary">Banda Pétalos De Rosa</h5>
+                    <img src="./imagenes/Banda Pétalos De Rosa.png" class="card-img-top" alt="...">
+                    <div class="card-body  ">
+                      <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class=" text-primary">Precio : <span class="precio">$ 5.400</span> </h5>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-light btn-lg button" id="13" onclick= "carritoAgregar(anillo4.nombre) , sumaProductos (anillo4.precio)" >Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 5 of 5 -->
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="col">
+                  <div class="card shadow mb-1 bg-dark rounded " style="width: 20rem;">
+                    <h5 class="card-title mb-1 pt-2 text-center text-primary">Corona pulida</h5>
+                    <img src="./imagenes/Corona pulida.png" class="card-img-top" alt="...">
+                    <div class="card-body  ">
+                      <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class=" text-primary">Precio : <span class="precio">$ 6.200</span> </h5>
+                      <div class="d-grid gap-2">
+                        <button class="btn btn-light btn-lg button" id="14" onclick= "carritoAgregar(anillo5.nombre) , sumaProductos (anillo5.precio)" >Agregar al Carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          </div> 
 
         </section>
 
@@ -170,32 +197,14 @@
 
 
 
-
+      <!-- ejemplo hecho a mano -->
     <div>
         <img src="" alt="x">
         <p>pulsera de acero blanco, con eslabones</p> 
         <span>$1600</span>
         <button onclick=" AgregarCarrito1 (precioPulAcBlanco)">Agregar al Carrito</button>
     </div> <hr>
-    <div>
-        <img src="" alt="x">
-        <p>Anillo Solitario Corona</p> 
-        <span>$10000</span>
-        <button id="10" onclick= "carritoAgregar(anillo1.nombre), sumaProductos (anillo1.precio)" >Agregar al Carrito</button>
-    </div> <hr>
-    <div>
-        <img src="" alt="x">
-        <p>Anillo Solitario Corona</p> 
-        <span>$10000</span>
-        <button id="11" onclick= "carritoAgregar(anillo2.nombre) , sumaProductos (anillo2.precio)" >Agregar al Carrito</button>
-    </div> <hr>
-    <div>
-        <img src="" alt="x">
-        <p>Anillo Solitario Corona</p> 
-        <span>$10000</span>
-        <button id="12" onclick= "carritoAgregar(anillo3.nombre) , sumaProductos (anillo3.precio)" >Agregar al Carrito</button>
-    </div> <hr>
-    <div>
+    
         
         <p>Con Visa y master son : <br>
              hasta 3 (tres) cuotas sin interes. <br>
