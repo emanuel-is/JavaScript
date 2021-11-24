@@ -1,3 +1,5 @@
+
+
 body{
     background-color: rgb(189, 189, 189);
     margin: 5px;
@@ -16,8 +18,48 @@ header{
 }
 
 .tituloAccesorio{
-    padding: 15%;
+    padding: 10%;
+    width: 90%;
     margin-top: 5%;
-    background-color: rgb(74, 116, 74);
+    background-color: rgb(228, 248, 228);
+    display: flex;
+}
+.tituloAccesorio img {
+    border-radius: 3px;
+}
+.carrito{
+    min-width: 70vh;
+    max-width: 500px;
+    margin: 0 auto;
+    width: 100%;
+}
 
+.table__productos{
+    display: flex;
+}
+.table__cantidad input{
+    width: 40px;
+    border:none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+
+
+}
+.offcanvas-start {
+    width: 650px;
+}
+
+.imgCarrito{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+.nav-link {
+    margin-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
