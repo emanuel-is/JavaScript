@@ -94,24 +94,58 @@ function calcular(){
     let segundoN = document.getElementById("numero2");
 
 
-    if( operacion === "x" || operacion === "X" ){
+    if( operacion.value == "*" ){
 
         let multiplicacion = parseInt(primerN.value) * parseInt(segundoN.value);
         console.log(multiplicacion);
+        let contenido = document.getElementById("contenedor2");
+        contenido.innerHTML= `<p>El resultado de la multipicacion : ${multiplicacion}</p>`;
+        contenido.style.backgroundColor="black";
+        contenido.style.color="white";
+        contenido.style.fontFamily="arial"; 
 
     }
-    else if (operacion == "/" ){
+    else if (operacion.value == "/" ){
 
         let division = parseInt(primerN.value) / parseInt(segundoN.value);
-         alert ( division);
+         console.log(division);
+         let contenido = document.getElementById("contenedor2");
+         contenido.innerHTML= `<p>El resultado de la division es : ${division}</p>`; 
+         contenido.style.backgroundColor="grey";
+        contenido.style.color="purple";
+        contenido.style.fontFamily="arial black";
+    }
+    else if  (operacion.value == "+"){
+
+        let suma = parseInt(primerN.value) + parseInt(segundoN.value);
+        console.log(suma);
+        let contenido = document.getElementById("contenedor2");
+        contenido.innerHTML= `<p>El resultado de la suma es : ${suma}</p>`; 
+        contenido.style.backgroundColor="green";
+        contenido.style.color="red";
+        contenido.style.fontFamily="arial black";
+    }
+    else if (operacion.value == "-"){
+
+        let resta = parseInt(primerN.value) - parseInt(segundoN.value);
+        console.log(resta);
+        let contenido = document.getElementById("contenedor2");
+        contenido.innerHTML= `<p>El resultado de resta es : ${resta}</p>`; 
+        contenido.style.backgroundColor="red";
+        contenido.style.color="blue";
+        contenido.style.fontFamily="arial black";
     }
 
-   /*  let suma = parseInt(primerN.value) + parseInt(segundoN.value);
+    
+
+  
+
+   /*  
     console.log(suma);
-    let contenido = document.getElementById("contenedor2");  // creo la veriable para ese id del div vacio
+      // creo la veriable para ese id del div vacio
 
     
-    contenido.innerHTML= `<p>El resultado de la suma es : ${suma}</p>`;  */// y le paso lo que tiene que tener por html sin necesidad de crearle ninguna etiqueta
+     */// y le paso lo que tiene que tener por html sin necesidad de crearle ninguna etiqueta
 
         //de esta forma el contenido se va actualizando en la misma linea.
     
