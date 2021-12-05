@@ -45,6 +45,9 @@ console.log(document.head);
  //------------------- LISTA DE COMPRAS........
 
 function listaCompras(){  //creo la funcion y le asigno "elemento" como elemento entrante.
+ 
+ 
+    // ------------ ------ elemento dinamico en un div suelto 
 
      let item = document.getElementById("elemento"); //creo variable y le traigo el id "elemento"
     let div = document.createElement("div"); //creo variable div con el elemnto nuevo div.
@@ -56,7 +59,7 @@ function listaCompras(){  //creo la funcion y le asigno "elemento" como elemento
     contenedor.appendChild(div); // le digo que cada variable contenedor 
     
 
-    /* ------------------------------------------------ */
+    /* ----------------------- elemento dinamico en forma de lista------------------------- */
     let producto = document.getElementById("elemento");                //creo variable con el id elemnto
     let contenido = document.getElementById ("contenedor");            // creo una variable contenido con el id contenedor del div vacio creado en html
 

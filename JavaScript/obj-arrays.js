@@ -14,11 +14,7 @@ let anillo3 = new anillos ( "Banda Triple Cruzado Con Pavé" , "Recubrimiento en
 let anillo4 = new anillos ( " Banda Pétalos De Rosa" , " plata esterlina" , "Plata brillante" ,5400,  14);
 let anillo5 = new anillos ( "Corona pulida" , "plata esterlina" , "Plata brillante" , 6200, 15);
 
-console.log (anillo1);
-console.log (anillo2);
-console.log (anillo3);
-console.log (anillo4);
-console.log (anillo5); 
+
 
 
 
@@ -43,7 +39,7 @@ let cadenitaYdije4 = new collarersYdiges ("Collar De Cuero Negro Con Pluma" , "C
 //--------------------- array y funcion para cuando tenga botones de agregar producto--------
 
 
-let carrito = [];   ////agrego un array vacio   
+  ////agrego un array vacio   
 let Productos = [];
 var total = 0 ;
 
