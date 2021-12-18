@@ -15,22 +15,15 @@ boton.addEventListener("click", function saludar (){ console.log("holaaa");
 
 
 
-let boton=document.getElementById("boton1");
+let boton =document.getElementById("boton1");
 
-boton.addEventListener("click", respuestaBoton());
+boton.addEventListener("click", function respuestaBoton() {
+  console.log("hola");
+}), 
+boton.addEventListener("mousemove" , function saludar() {
+  console.log("MUEVO MOUSE");
+})
 
-function respuestaBoton(con){
-
-    let contener = document.getElementById("container");
-
-    let saludar = document.createElement("p");
-
-    saludar.innerHTML= "Hola Zoquetes";
-    contener.appendChild(saludar.value);
-    console.log(saludar);
-
-    /* console.log("hola") */
-}
 
 
 const database = [];

@@ -30,22 +30,23 @@
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Carrito</button>
-                    </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        Productos
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                        <li><a class="dropdown-item" href="#">Anillos</a></li>
-                        <li><a class="dropdown-item" href="#">Dijes Y Cadenitas</a></li>
+                        <li><a class="dropdown-item" href="#home">Anillos</a></li>
+                        <li><a class="dropdown-item" href="#profile">Collares y dijes</li>
                         <li>
                           <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Pulseras</a></li>
+                        <li><a class="dropdown-item" href="#aros-tab">Aros</a></li>
+                        <li><a class="dropdown-item" href="#charms-tab">Charms</a></li>
                       </ul>
                     </li>
+                    <li class="nav-item">
+                      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Carrito</button>
+                  </li>
                   </ul>
                   <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -88,7 +89,7 @@
               <!-- total del carrito y boton de comprar -->
               <div class="row mx-4">
                 <div class="col">
-                  <h3 class="itemCarTotal ">Total : 0</h3>
+                  <h3 class="itemCarTotal">Total : 0</h3>
                 </div>
                 <div class="col d-flex justify-content-end">
                   <button class="btn btn-success">COMPRAR</button>
@@ -103,20 +104,20 @@
           <!-- Nav tabs -->
           <ul class="nav nav-tabs nav-justified flex-column flex-sm-row" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Anillos</a>
+              <a class="nav-link active" id="anillos-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Anillos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Collares y dijes</a>
+              <a class="nav-link" id="Collares-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Collares y dijes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="messages-tab" data-bs-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Aros</a>
+              <a class="nav-link" id="aros-tab" data-bs-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Aros</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="settings-tab" data-bs-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Charms</a>
+              <a class="nav-link" id="charms-tab" data-bs-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Charms</a>
             </li>
           </ul>
 
-          <!-- Tab panes        anillos -->
+          <!-- Tab panes  anillos -->
           <div class="tab-content">
             <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
               <section class="container" >
@@ -124,16 +125,16 @@
                 <div class="container">
                   <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
                     <!-- 1 of 5 -->
-                    <div class="col d-flex justify-content-center mb-4">
+                    <div class="col d-flex justify-content-center mb-4" >
                       <div class="col">
-                        <div class="card shadow mb-1 bg-dark rounded " style="width: 18rem;">
+                        <div class="card shadow mb-1 bg-dark rounded " style="width: 18rem;" >
                           <h5 class="card-title mb-1 pt-2 text-center text-primary">Anillo Solitario Corona</h5>
-                          <img src="./imagenes/Anillo Solitario Corona.png" class="card-img-top" alt="...">
+                          <img src="./imagenes/Anillo Solitario Corona.png" class="card-img-top" id ="anillos">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 10.000</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 10000.00</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button"  id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -147,9 +148,9 @@
                           <img src="./imagenes/Hojas Brillantes.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio"> $ 5.500</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio"> $ 5500</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -163,9 +164,9 @@
                           <img src="./imagenes/Banda Triple Cruzado Con Pavé.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 9.800</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 9800</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar">Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -179,9 +180,9 @@
                           <img src="./imagenes/Banda Pétalos De Rosa.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 5.400</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 5400</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -195,9 +196,9 @@
                           <img src="./imagenes/Corona pulida.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 6.200</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 6200</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -223,9 +224,9 @@
                           <img src="./imagenes/Estrella Azul De Cenicienta De Disney.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 8.000</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 8000</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -239,9 +240,9 @@
                           <img src="./imagenes/Dije Llave Del Corazón.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio"> $ 9.100</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio"> $ 9100</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -255,9 +256,9 @@
                           <img src="./imagenes/Collar Cadena de cuentas.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 18.000</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 18000</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar"  data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -271,9 +272,9 @@
                           <img src="./imagenes/Collar De Cuero Negro Con Pluma.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 8.400</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 8400</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -297,9 +298,9 @@
                           <img src="./imagenes/Aros De Botón Medianoche Centelleante.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 10.250</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 10250</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -313,9 +314,9 @@
                           <img src="./imagenes/Corazones anudados.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio"> $ 18.600</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio"> $ 18600</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -329,9 +330,9 @@
                           <img src="./imagenes/Aro Colgantes Pluma Reluciente.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 27.900</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 27900</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -345,9 +346,9 @@
                           <img src="./imagenes/Ala de Mariposa.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 18.600</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 18600</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -361,9 +362,9 @@
                           <img src="./imagenes/Aros De Botón Flores En Dos Tonos.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 25.700</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 25700</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -386,9 +387,9 @@
                           <img src="./imagenes/Charm Clip Globo Azul.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 8.400</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 8400</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal">Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -402,9 +403,9 @@
                           <img src="./imagenes/Charma clip esrella de la muerte.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio"> $ 10.250</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio"> $ 10250</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar" >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -418,9 +419,9 @@
                           <img src="./imagenes/Charm Colgante Yoda De Star Wars.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 13.950</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 13950</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -434,9 +435,9 @@
                           <img src="./imagenes/Charm Ariel De La Sirenita De Disney.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 10.250</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 10250</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -450,9 +451,9 @@
                           <img src="./imagenes/Charm Colgante Halcón Milenario.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 12.100</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 12100</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -466,9 +467,9 @@
                           <img src="./imagenes/Charm GROGU.png" class="card-img-top" alt="...">
                           <div class="card-body  ">
                             <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <h5 class=" text-primary">Precio : <span class="precio">$ 8.400</span> </h5>
+                            <h5 class=" text-primary">Precio : <span class="precio">$ 8400</span> </h5>
                             <div class="d-grid gap-2">
-                              <button class="btn btn-light btn-lg button" id = "agregar"  >Agregar al Carrito</button>
+                              <button class="btn btn-light btn-lg button" id = "agregar" data-bs-toggle="modal" data-bs-target="#mymodal" >Agregar al Carrito</button>
                             </div>
                           </div>
                         </div>
@@ -477,6 +478,18 @@
                   </div>
                 </div> 
               </section>
+            </div>
+          </div> <!-- inicio del modal -->
+          <div id="mymodal" class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h5 class="modal-title" id="exampleModalLabel">Se agrego al carrito</h5>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ok</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
