@@ -15,4 +15,11 @@ $("#boton").click( function(){  // llamo a id boton y le agrego un evento liogad
     let valor = $("#nombreUser").val()  ///creo una variable la igualo a el id nombreUser del input y le agrego .val() para que me traiga el valor solo del input
     console.log(valor);
 
+    
+    $(".contenedor").innerHTML("valor");
+
+    $("valor").append(contenedor)
 })
+
+
+

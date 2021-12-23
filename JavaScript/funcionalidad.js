@@ -56,6 +56,7 @@ function addItemCarrito(nuevoItem){   //creo una nueva funcion llamada anteriorm
     }
     carrito.push(nuevoItem);          //  agrego a carrito ese nuevo item creado.
     renderCarrito();                     // llamo a la funcion 
+    $(".offCarrito").append('<h3>Puede seguir agregando productos al carrito o aumentarle la cantidad</h3>')   //----- agrego titulo descriptivo on jquery-------
 
 }
 
@@ -83,7 +84,7 @@ function renderCarrito(){           // creo esa funcion llamada anteriormente.
         tr.querySelector(".cantidadElemento").addEventListener('change', sumaCantidad);
     })
     totalCarrito();
-
+    
     
 
     
@@ -93,11 +94,15 @@ function totalCarrito(){
 
     let total = 0;
     let itemCarritoTotal  = document.querySelector('.itemCarTotal');
+    // let itemCarritoTotal = $(".itemCarTotal");
     carrito.forEach((item) =>{
         let precio = Number(item.precio.replace("$", ''));
         total = total + precio*item.cantidad;
     })
     itemCarritoTotal.innerHTML= `Total = $ ${total}`;
+    $('.itemCarTotal').css('color', '#2c7da7');       //----------------------- Cambio color de la cuenta con jquery----------
+   
+
 }
 
 
@@ -112,12 +117,14 @@ function removeItemCarrito(e){
         if (carrito[i].title.trim() === title.trim()){
             carrito.splice(i , 1);
             console.log("borrando")
+            
+
         }
     }
 
     tr.remove();
     totalCarrito();
-
+    $("h3").empty();  // ----------- borro el h3 con empty de jquery-----------   
 }
   
 function sumaCantidad(e){
