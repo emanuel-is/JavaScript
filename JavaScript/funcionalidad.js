@@ -101,7 +101,8 @@ function totalCarrito(){
     })
     itemCarritoTotal.innerHTML= `Total = $ ${total}`;
     $('.itemCarTotal').css('color', '#2c7da7');       //----------------------- Cambio color de la cuenta con jquery----------
-   
+    
+    addLocalStorage()
 
 }
 
@@ -141,5 +142,16 @@ function sumaCantidad(e){
         }
         
     })
-     console.log(carrito);
+}
+
+function addLocalStorage(){
+    localStorage.setItem('carrito',JSON.stringify(carrito))
+}
+
+window.onload = function(){
+    const storage = JSON.parse(localStorage.getItem('carrito'));
+    if(storage){
+        carrito=storage;
+        renderCarrito()
+    }
 }
