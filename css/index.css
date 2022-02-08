@@ -21,11 +21,14 @@ header{
     padding: 10%;
     width: 90%;
     margin-top: 5%;
-    background-color: rgb(228, 248, 228);
+    background-color: rgb(237 206 251);
     display: flex;
+    margin-bottom: 25px;
 }
 .tituloAccesorio img {
     border-radius: 3px;
+    padding: 39px;
+    border-radius: 305px;
 }
 .carrito{
     min-width: 70vh;
@@ -63,3 +66,14 @@ header{
     padding-left: 3rem;
     padding-right: 3rem;
 } 
+
+
+.containerCyD{
+    display: none;
+}
+.containerAros{
+    display: none;
+}
+.containerCharms{
+    display:none;
+}

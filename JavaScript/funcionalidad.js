@@ -56,7 +56,7 @@ function addItemCarrito(nuevoItem){   //creo una nueva funcion llamada anteriorm
     }
     carrito.push(nuevoItem);          //  agrego a carrito ese nuevo item creado.
     renderCarrito();                     // llamo a la funcion 
-    $(".offCarrito").append('<h3>Puede seguir agregando productos al carrito o aumentarle la cantidad</h3>')   //----- agrego titulo descriptivo on jquery-------
+    /* $(".offCarrito").append('<h3>Puede seguir agregando productos al carrito o aumentarle la cantidad</h3>')   //----- agrego titulo descriptivo on jquery------- */
 
 }
 
@@ -125,7 +125,7 @@ function removeItemCarrito(e){
 
     tr.remove();
     totalCarrito();
-    $("h3").empty();  // ----------- borro el h3 con empty de jquery-----------   
+   /*  $("h3").empty(); */  // ----------- borro el h3 con empty de jquery-----------   
 }
   
 function sumaCantidad(e){
@@ -155,3 +155,10 @@ window.onload = function(){
         renderCarrito()
     }
 }
+
+
+$('#charms-tab').click(function(){
+
+    $('.settings').fadeout('800');
+
+})

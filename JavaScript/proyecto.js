@@ -69,3 +69,39 @@ function cantidadDecuotas (  ) { // creo funcion para calcular precio por cuotas
 }
 
 
+$('.btnToogleAni').click(function(){
+
+    $('.containerAnillo').fadeIn('slow',function(){
+        $('.containerCyD').fadeOut('fast');
+        $('.containerAros').fadeOut('fast');
+        $('.containerCharms').fadeOut('fast');
+    })
+
+});
+
+$('.btnToogleCyD').click(function(){
+
+    $('.containerCyD').fadeIn('slow',function(){
+        $('.containerAnillo').fadeOut('fast');
+        $('.containerAros').fadeOut('fast');
+        $('.containerCharms').fadeOut('fast');
+    })
+})
+
+$('.btnToogleAros').click(function(){
+
+    $('.containerAros').fadeIn('slow',function(){
+        $('.containerAnillo').fadeOut('fast');
+        $('.containerCyD').fadeOut('fast');
+        $('.containerCharms').fadeOut('fast');
+    })
+})
+
+$('.btnToogleCharms').click(function(){
+
+    $('.containerCharms').fadeIn('slow',function(){
+        $('.containerAnillo').fadeOut('fast');
+        $('.containerCyD').fadeOut('fast');
+        $('.containerAros').fadeOut('fast');
+    })
+})

@@ -10,24 +10,24 @@ $('#btnToogle').click(function(){
 
 $('#btnDown').click(function(){
 
-    $('p').slideDown('1000');
+    $('p').slideDown('slow');
 
 })
 
 $('#btnUp').click(function(){
 
-    $('p').slideUp('1000');
+    $('p').slideUp('slow');
 
 })
 
 $('#btnFadeOut').click(function(){
 
-    $('.caja').fadeOut('1000');
+    $('.caja').fadeOut('800');
 
 })
 $('#btnFadeIn').click(function(){
 
-    $('.caja').fadeIn('1000');
+    $('.caja').fadeIn('800');
 
 })
 
@@ -37,7 +37,17 @@ $('#btnFadeIn').click(function(){
 $("#btnAni").click(function(){
 
     $(".caja2").animate({margin:'300px',width:'400px',height:'400px',opacity:'0.8',
-                        margin:'60px',width:'300px',height:'300px',opacity:'0.6'});
+                        margin:'60px',width:'300px',height:'300px',opacity:'0.6',
+                        margin:'20px',width:'100px',height:'100px',opacity:'0.6',});
+    
+})
+
+$("#btnAni2").click(function(){
+
+    $(".caja2").animate({width:'100px',height:'100px',opacity:'0.6',
+                        width:'300px',height:'300px',opacity:'0.6',
+                        width:'400px',height:'400px',opacity:'0.8',
+                        margin:'0px',width:'500px',height:'500px',opacity:'0.5'});
     
 })
 
@@ -45,5 +55,6 @@ $("#btnAni").click(function(){
 let nombreCompleto = "islas emanuel";
 
 let nombre = nombreCompleto.slice(6, 13);
-
+let apellido = nombreCompleto.slice(0,5)
 console.log(nombre);
+console.log(apellido);
